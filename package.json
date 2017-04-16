@@ -1,0 +1,14 @@
+{
+  "name": "cascadia-watson",
+  "version": "0.0.0",
+  "description": "An application that uses IBM Watson to analyze tweets, determine the mood, and show an emoji that represents that mood.",
+  "main": "watson-server.js",
+  "repository": "",
+  "author": "Evan Johnson and Robby King",
+  "dependencies": {
+    "async": "~0.2.8",
+    "express": "~3.2.4",
+    "twitter": "^1.4.0",
+    "watson-developer-cloud": "^2.0.1"
+  }
+}

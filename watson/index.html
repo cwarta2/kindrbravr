@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en" ng-app>
+  <head>
+    <title>HackUNL Mood</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <style>
+      .twitter-mood {
+        max-width: 50px;
+        height: auto;
+        float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+      }
+      .emoji {
+        position: relative;
+        margin: 10px auto;
+        height: auto;
+        max-width: 120px;
+        transition: transform 0.2s ease-out;
+        z-index: 1000;
+      }
+      .emoji:hover {
+        transform: scale(3.0);
+      }
+      .header {
+        background-image: url('http://research.unl.edu/wp-content/uploads/2013/10/100419-Campus-Pan.jpg');
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        text-shadow: 0 2px 8px rgba(0,0,0,0.5), 0 2px 20px rgba(0,0,0,0.5);
+          width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  border-radius: 0 !important;
+  opacity: 0.8;
+  min-height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+      }
+      .header h1 small {
+        color: #fff;
+      }
+      #tweetdeck {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron text-center header">
+        <h1>HackUNL <small>current mood</small></h1>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <h3>The current mood on Twitter is <span id="moodTitle">...</span></h3>
+          <div class="text-center">
+            <img class="emoji" id="twitterMood" >
+          </div>
+          <div id="tweetdeck">
+            <div class="alert alert-warning">
+              Sorry! No tweets yet yo!
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    <script src="./js/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+  </body>
+</html>
